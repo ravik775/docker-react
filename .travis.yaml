@@ -1,4 +1,4 @@
-language: node_js
+language: generic
 sudo: required # require super user permission
 services:
     - docker
