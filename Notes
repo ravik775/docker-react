@@ -1,0 +1,32 @@
+Need to install nodejs version v10.16.0
+
+npm install -g create-react-app #download the needed 
+create-react-app frontend # will create the app in frontend
+
+npn run start  # is a development only command starting developement only server in local
+npm run test   # any test associated project
+npm run build  # to take all javascript files and consolidate into one that can be served in production
+
+docker run -it -p8082:3000  bf8d111d870b
+docker run -it -p8082:3000 -v /app/node_modules -v $(pwd):/app bf8d111d870b
+docker attach <container-id>
+
+
+ssh-keygen
+public key -> Deploy key on Project
+
+git init
+git add .
+git commit -m "initial commit"
+git remote add origin git@github.com:ravik775/docker-react.git
+
+
+https://travis-ci.org/
+
+
+
+https://us-east-2.console.aws.amazon.com/console/home?region=us-east-2
+
+Elastic Beanstalk -> Create a Application -> Web server environment -> Base configuration = Docker
+
+Environment ID: e-mpzsnrqbkn, URL: DockerReact-env.eba-pabdwp89.us-east-2.elasticbeanstalk.com 
