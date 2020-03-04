@@ -7,5 +7,5 @@ before_install:
     - docker build -t ravik775/docker-react -f Dockerfile.dev .
 
 script:
-    - docker run ravik775/docker-react npm run test -- --coverage
+    - docker run -e CI=true ravik775/docker-react npm run test
 
